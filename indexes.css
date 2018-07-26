@@ -1,7 +1,6 @@
 body{
-	font-family:monospace;
+	font-family:monospace;	
 }
-
 
 body, html{
   font-size: 100%;
@@ -9,129 +8,6 @@ body, html{
   margin:0;
   padding:0;
 }
-body{
-/*   padding-top:60px; */
-}
-main{
-  height: 2000px;
-}
-/* Sticky Position Code Goes Here */
-
-nav{
-  position: sticky;
-  top: 0;
-  
-/*   position:fixed;
-  top:0;
-  left:0;
-  right:0; */
-
-}
-
-
-/* End Sticky  */
-
-nav ul{
-    list-style: none;
-    padding:0;
-    background:#444;
-}
-
-nav ul li a{
-    color:#ddd;
-    text-decoration: none;
-    padding: .8rem 1rem;
-    display: block;
-    line-height: 1;
-}
-
-/*styling logo*/
-
-nav div:first-child{
-    background:#222;
-}
-nav div:first-child h1{
-    line-height: 0;
-    padding: .8rem 0rem;
-    text-align: center;
-}
-
-
-nav div:first-child h1, nav ul{
-    margin:0;
-}
-
-/*Styling for larger devices*/
-
-
-    nav{
-        display: flex;
-        justify-content: space-between;
-        background: #222;
-        align-items: center;
-    }
-    
-    nav ul{
-        display: flex;
-        align-items: center;
-        background:none;
-        flex-wrap: wrap;
-    }
-    nav div:first-child h1{
-        padding: 0;
-        margin:0 1rem;
-    }
-    nav div:first-child img{
-        height: 40px;
-        
-    }
-    nav ul li{
-        border-bottom:none;
-        flex: 1 0 auto;
-        position: relative;
-    }
-    nav ul li a{
-        padding:1.2rem 1rem;
-    }
-    nav ul li a::before, nav ul li a::after{
-        content: "";
-        position: absolute;
-        bottom:0;
-        right: 0;
-        width:0%;
-        height: 2px;
-        background:red;
-        transition: .2s width ease-in-out;
-    }
-    
-    nav ul li a::before{
-        left:0;
-    }
-    
-    nav ul li a:hover::after,nav ul li a:hover::before{
-        width: 25%;
-    } 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .custom-carousel{
@@ -165,7 +41,125 @@ nav div:first-child h1, nav ul{
  .carousel-control.left{
 	 background-image:none;
  }
- 
- 
- 
- 
+
+
+/* -------------------------header-----------*/
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{ background:#ccc;
+}
+
+
+.head{
+ width:100%;	
+}
+
+.nav{
+  position: sticky;
+  top: 0;
+}
+
+.head h1{
+	padding: 0px 40px;
+	line-height: 100px;
+	font-size:20px;
+	color:orange;
+	background:none;
+	font-family: sans-serif;
+}
+
+
+.head {
+	background:white;
+	padding:0px;
+	text-align: center;
+}
+
+.nav{
+	background:url(images/bg.jpg);
+	background-repeat: repeat;
+    padding-top: 3px;
+    border-top: 0.9px solid #9e9301;
+    border-bottom:0.9px solid #9e9301;    
+}
+
+.nav li{
+
+	list-style-type: none;
+	display:inline-block;
+	padding:20px 30px 20px 10px;
+	text-align: right;
+  font-size:12.5px;
+  float: right;
+  text-indent: 5px;
+}
+
+
+
+
+/* ----------------top header -----------------*/
+
+
+
+
+
+.header {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  background:#161616;
+  color:#8c8c88;
+  margin:auto;
+  padding:5px;
+}
+
+.header > * {
+  display: table-cell;
+}
+
+.header > *:last-child {
+  text-align: right;  
+}
+
+.navtop {
+  vertical-align: baseline;
+}
+
+.topinfo{
+
+  font-size:12.5px;
+  text-align: left;
+  padding:5px  0  5px 20px;
+  color:#8c8c88;
+
+}
+
+.shade ,.topend{
+  text-decoration: none;
+  text-overflow: normal;
+  color:#8c8c88;
+  position: relative;
+  right:70px;
+  font-size: 13px;
+}
+
+.shade:hover{
+  background: white;
+  cursor:pointer;
+}
+      /* circle shape*/
+.shade{
+  display:inline-block!important;
+  width:20px;
+  height:19px;
+  background-color:#666666;
+  color:white;
+  text-align: center;
+  padding: 1px;
+  vertical-align: middle;
+  border-radius:50%;
+}
